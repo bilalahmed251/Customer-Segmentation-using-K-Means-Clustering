@@ -1,55 +1,16 @@
-## 🚗 Car Data Analysis in MATLAB
-## 📌 Overview
-This project performs complete data analysis and modeling on an automotive dataset using MATLAB.
+# Customer Segmentation using K-Means Clustering
 
-## It covers:
-Data Cleaning
-Exploratory Data Analysis
-Statistical Testing
-Predictive Modeling
-Model Evaluation
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Unsupervised Learning](https://img.shields.io/badge/ML-Unsupervised-purple)
 
-# 🛠 Workflow
-## 1. Data Cleaning & Preprocessing
-Handle missing values (? → NaN)
-Median imputation for numerical columns
-Mode imputation for categorical FuelType
-Remove duplicates & outliers (Z-score > 3)
-Save cleaned dataset → cleaned_cars_data.csv
+An advanced unsupervised machine learning project that analyzes customer purchasing behavior and groups them into distinct segments for targeted marketing.
 
-## 2. Descriptive Statistics & EDA
-Compute Mean, Median, Mode, StdDev, Min, Max
-Frequency table for FuelType
-# Visualizations:
-Boxplots for numerical features
-Histogram for Price
-Scatter plot: Horsepower vs Price
+## Features
+- **Optimal Cluster Detection:** Programmatically determines the best number of clusters (k) using the Silhouette Score optimization loop.
+- **Dimensionality Reduction:** Employs Principal Component Analysis (PCA) to reduce complex multi-dimensional data down to 2 components.
+- **Data Visualization:** Automatically generates and saves a beautiful 2D scatter plot projection (customer_segments_pca.png) of the customer clusters using Seaborn.
+- **Model Export:** Exports the final KMeans model for future inferences.
 
-## 3. Probability Distributions & Sampling
-Fit Normal Distribution to Price
-Fit Poisson Distribution to Horsepower
-Random sampling (n=50) → Compare sample mean vs population mean
-
-## 4. Hypothesis Testing
-t-test: Compare Petrol vs Diesel prices
-Chi-Square Test: Association between FuelType and Year
-95% Confidence Intervals for mean prices
-
-## 5. Regression Analysis
-Linear Regression: Price ~ Horsepower
-Evaluate with R² and RMSE
-
-## 6. Logistic Regression & Classification
-Binary classification: High Price vs Low Price
-Features: Horsepower, Weight
-Metrics: Accuracy, Precision, Recall
-ROC Curve & AUC
-
-## 📊 Key Insights
-Price ↗ increases with Horsepower
-No strong statistical difference between Petrol & Diesel prices
-Logistic model separates price categories well
-
-## 📌 Technologies
-MATLAB R2024a
-Statistics and Machine Learning Toolbox
+## Tech Stack
+- **Language:** Python
+- **Libraries:** Scikit-Learn (KMeans, PCA), Seaborn, Matplotlib, Pandas
